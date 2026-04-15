@@ -20,19 +20,19 @@ const importData = async () => {
 
         const restaurants = [
             {
-                name: 'Burger Palace',
-                description: 'Best authentic flame-grilled burgers in town.',
-                imageUrl: 'https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=500&q=60'
+                name: 'The Punjabi Dhaba',
+                description: 'Authentic North Indian cuisine rich with spices and butter.',
+                imageUrl: 'https://images.unsplash.com/photo-1585937421612-70a008356fbe?auto=format&fit=crop&w=500&q=60'
             },
             {
-                name: 'Pizza Nirvana',
-                description: 'Wood-fired organic pizzas with secret family sauce.',
-                imageUrl: 'https://images.unsplash.com/photo-1604382355076-af4b0eb60143?auto=format&fit=crop&w=500&q=60'
+                name: 'South Indian Delights',
+                description: 'Crispy dosas and soft idlis with rich coconut chutney.',
+                imageUrl: 'https://images.unsplash.com/photo-1610192244261-3f33de3f55e4?auto=format&fit=crop&w=500&q=60'
             },
             {
-                name: 'Sushi Zen',
-                description: 'Fresh sushi, sashimi, and healthy green bowls.',
-                imageUrl: 'https://images.unsplash.com/photo-1553621042-f6e147245754?auto=format&fit=crop&w=500&q=60'
+                name: 'Delhi Chaat House',
+                description: 'Spicy, tangy, and sweet street food that hits right.',
+                imageUrl: 'https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=500&q=60'
             }
         ];
 
@@ -41,38 +41,45 @@ const importData = async () => {
         const menus = [
             {
                 restaurantId: createdRestaurants[0]._id,
-                name: 'Classic Cheeseburger',
-                price: 8.99,
-                description: 'Beef patty, double cheddar, lettuce, tomato, special sauce.',
-                imageUrl: 'https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=300&q=60'
+                name: 'Butter Chicken',
+                price: 250,
+                description: 'Tender chicken braised in a spiced tomato and butter sauce.',
+                imageUrl: 'https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?auto=format&fit=crop&w=300&q=60'
             },
             {
                 restaurantId: createdRestaurants[0]._id,
-                name: 'Crispy Fries',
-                price: 3.99,
-                description: 'Golden fries perfectly seasoned with sea salt.',
-                imageUrl: 'https://images.unsplash.com/photo-1576107232684-1279f390859f?auto=format&fit=crop&w=300&q=60'
+                name: 'Garlic Naan',
+                price: 50,
+                description: 'Soft and chewy flatbread topped with minced garlic and cilantro.',
+                imageUrl: 'https://images.unsplash.com/photo-1565557623262-b51c2513a641?auto=format&fit=crop&w=300&q=60'
             },
             {
                 restaurantId: createdRestaurants[1]._id,
-                name: 'Margherita Pizza',
-                price: 12.99,
-                description: 'Fresh mozzarella, basil leaves, crushed san marzano tomatoes.',
-                imageUrl: 'https://images.unsplash.com/photo-1604382354936-07c5d9983bd3?auto=format&fit=crop&w=300&q=60'
+                name: 'Masala Dosa',
+                price: 120,
+                description: 'Thin crispy crepe stuffed with a spiced potato mash.',
+                imageUrl: 'https://images.unsplash.com/photo-1589301760014-d929f39ce9b1?auto=format&fit=crop&w=300&q=60'
             },
             {
                 restaurantId: createdRestaurants[1]._id,
-                name: 'Garlic Knots',
-                price: 5.99,
-                description: 'Fresh baked dough balls tossed in garlic butter & parmesan.',
-                imageUrl: 'https://images.unsplash.com/photo-1573140247632-f8fd74997d5c?auto=format&fit=crop&w=300&q=60'
+                name: 'Idli Sambar',
+                price: 80,
+                description: 'Steamed rice cakes served with aromatic lentil stew.',
+                imageUrl: 'https://images.unsplash.com/photo-1589301773112-0058cb30d041?auto=format&fit=crop&w=300&q=60'
             },
             {
                 restaurantId: createdRestaurants[2]._id,
-                name: 'Spicy Tuna Roll',
-                price: 9.99,
-                description: 'Fresh tuna with spicy mayo, mixed greens and cucumber.',
-                imageUrl: 'https://images.unsplash.com/photo-1579584425555-c3ce17fd4351?auto=format&fit=crop&w=300&q=60'
+                name: 'Punjabi Samosa',
+                price: 30,
+                description: 'Fried pastry with a savory filling of spiced potatoes and peas.',
+                imageUrl: 'https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=300&q=60'
+            },
+            {
+                restaurantId: createdRestaurants[2]._id,
+                name: 'Chole Bhature',
+                price: 150,
+                description: 'Spicy chickpea curry served with puffy fried bread.',
+                imageUrl: 'https://images.unsplash.com/photo-1552598064-071ba826e792?auto=format&fit=crop&w=300&q=60'
             }
         ];
 

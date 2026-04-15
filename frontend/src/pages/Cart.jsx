@@ -56,11 +56,11 @@ const Cart = () => {
           <div key={item._id} className="cart-item">
             <div>
               <h3>{item.name}</h3>
-              <p>${item.price} x {item.quantity}</p>
+              <p>Rs. {item.price} x {item.quantity}</p>
             </div>
             <div>
               <p style={{ fontWeight: 'bold', marginRight: '1rem', display: 'inline-block' }}>
-                ${item.price * item.quantity}
+                Rs. {item.price * item.quantity}
               </p>
               <button 
                 onClick={() => removeFromCart(item._id)} 
@@ -74,7 +74,7 @@ const Cart = () => {
         ))}
       </div>
       <div className="cart-total">
-        Total: ${getCartTotal()}
+        Total: Rs. {getCartTotal()}
       </div>
       <button 
         className="btn" 

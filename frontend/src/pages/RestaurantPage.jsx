@@ -31,7 +31,7 @@ const RestaurantPage = () => {
               <div className="card-content">
                 <h3 className="card-title">{item.name}</h3>
                 <p className="card-desc">{item.description}</p>
-                <p className="card-price">${item.price}</p>
+                <p className="card-price">Rs. {item.price}</p>
                 <button onClick={() => addToCart(item)} className="btn">
                   Add to Cart
                 </button>

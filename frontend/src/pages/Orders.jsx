@@ -43,12 +43,12 @@ const Orders = () => {
                 <span className={`status-badge status-${order.status}`}>{order.status}</span>
               </div>
               <div>
-                <strong>Total: ${order.totalAmount}</strong>
+                <strong>Total: Rs. {order.totalAmount}</strong>
               </div>
               <ul className="order-items-list">
                 {order.items.map((item, idx) => (
                   <li key={idx}>
-                    {item.name} - ${item.price} x {item.quantity}
+                    {item.name} - Rs. {item.price} x {item.quantity}
                   </li>
                 ))}
               </ul>
