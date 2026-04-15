@@ -1,0 +1,11 @@
+# Ignore common OS files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+
+# Dependencies
+node_modules/
+
+# Ignore env files at root
+.env
+.env.*
