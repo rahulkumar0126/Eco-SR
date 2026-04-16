@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import axios from "axios";
+import axios from "../axios";
 
 const Home = () => {
   const [restaurants, setRestaurants] = useState([]);
@@ -8,7 +8,7 @@ const Home = () => {
   useEffect(() => {
     const fetchRestaurants = async () => {
       try {
-        const { data } = await axios.get("http://localhost:5000/api/restaurants");
+        const { data } = await axios.get("/api/restaurants");
         setRestaurants(data);
       } catch (error) {
         console.error("Error fetching restaurants", error);

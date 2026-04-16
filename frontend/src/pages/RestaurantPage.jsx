@@ -1,6 +1,6 @@
 import { useState, useEffect, useContext } from "react";
 import { useParams } from "react-router-dom";
-import axios from "axios";
+import axios from "../axios";
 import { CartContext } from "../context/CartContext";
 
 const RestaurantPage = () => {
@@ -11,7 +11,7 @@ const RestaurantPage = () => {
   useEffect(() => {
     const fetchMenus = async () => {
       try {
-        const { data } = await axios.get(`http://localhost:5000/api/menus/${id}`);
+        const { data } = await axios.get(`/api/menus/${id}`);
         setMenus(data);
       } catch (error) {
         console.error("Error fetching menus", error);
